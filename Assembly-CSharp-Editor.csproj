@@ -10,10 +10,10 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{37A6AE8E-14FE-C306-8A1E-D0C97DFF9FEC}</ProjectGuid>
+    <ProjectGuid>{E94FF885-589C-F02F-9D33-FFB25B9E7017}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -48,7 +48,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2018.2.13f1</UnityVersion>
   </PropertyGroup>
@@ -61,52 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\BGScroller.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\Bullet.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\DestroyByBoundary.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\DestroyByContact.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\DestroyByTime.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\Enemy.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\EnemyBullet.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\EvasiveManouver.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\GameController.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\Mover.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\RandomRotator.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\ScaleDown.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\WeaponController.cs" />
-    <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\ZigZagManouver.cs" />
-    <Compile Include="Assets\art\Effects\Particle_Effects\Scripts\CameraMovement.cs" />
-    <Compile Include="Assets\art\Modeling\Earth_moon\EarthSpinScript.cs" />
-    <Compile Include="Assets\Scripts\Game\Block.cs" />
-    <Compile Include="Assets\Scripts\Game\Floor.cs" />
-    <Compile Include="Assets\Scripts\Manager\ConnectNetworkManager.cs" />
-    <Compile Include="Assets\Scripts\Manager\GageManager.cs" />
-    <Compile Include="Assets\Scripts\Manager\NetworkHUDManager.cs" />
-    <Compile Include="Assets\Scripts\Manager\SpawnNetworkManager.cs" />
-    <Compile Include="Assets\Scripts\Player\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Transition\ReturnButton.cs" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Outline\MKToonOutlineOnlyIO.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\MKToonFreeOutlineOnly.shader" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Outline\MKToonOutlineOnlySetup.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonInc.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Outline\MKToonOutlineOnlyBase.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\ShadowCaster\MKToonShadowCasterIO.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForwardAddSetup.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForwardIO.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\MKToonFreeMobile.shader" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonDef.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Surface\MKToonSurfaceIO.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\ShadowCaster\MKToonShadowCasterSetup.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForwardBaseSetup.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonLight.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\MKToonFree.shader" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForward.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonV.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\Surface\MKToonSurface.cginc" />
-    <None Include="Assets\art\Modeling\block\Shader\Inc\ShadowCaster\MKToonShadowCaster.cginc" />
+    <Compile Include="Assets\art\Modeling\block\Editor\MKToonFreeEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/workspace/unity/ACube201810_2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -215,6 +170,9 @@
     <Reference Include="UnityEngine.SharedInternalsModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
@@ -302,57 +260,129 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Timeline">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Vuforia.UnityExtensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/bbang/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/bbang/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/bbang/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/bbang/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/bbang/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{37A6AE8E-14FE-C306-8A1E-D0C97DFF9FEC}</Project>
+      <Name>Assembly-CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
