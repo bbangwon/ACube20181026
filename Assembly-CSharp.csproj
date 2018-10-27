@@ -53,6 +53,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\BGScroller.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\Bullet.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\DestroyByBoundary.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\DestroyByContact.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\DestroyByTime.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\Enemy.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\EnemyBullet.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\EvasiveManouver.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\GameController.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\Mover.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\RandomRotator.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\ScaleDown.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\WeaponController.cs" />
+     <Compile Include="Assets\art\Effects\CubeShipsFree\Scripts\ZigZagManouver.cs" />
+     <Compile Include="Assets\art\Effects\Particle_Effects\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\art\Modeling\Earth_moon\EarthSpinScript.cs" />
      <Compile Include="Assets\Scripts\Game\Block.cs" />
      <Compile Include="Assets\Scripts\Game\Floor.cs" />
      <Compile Include="Assets\Scripts\Manager\ConnectNetworkManager.cs" />
@@ -64,6 +81,25 @@
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Transition\ReturnButton.cs" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Outline\MKToonOutlineOnlyIO.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\MKToonFreeOutlineOnly.shader" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Outline\MKToonOutlineOnlySetup.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonInc.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Outline\MKToonOutlineOnlyBase.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\ShadowCaster\MKToonShadowCasterIO.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForwardAddSetup.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForwardIO.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\MKToonFreeMobile.shader" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonDef.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Surface\MKToonSurfaceIO.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\ShadowCaster\MKToonShadowCasterSetup.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForwardBaseSetup.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonLight.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\MKToonFree.shader" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Forward\MKToonForward.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Common\MKToonV.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\Surface\MKToonSurface.cginc" />
+     <None Include="Assets\art\Modeling\block\Shader\Inc\ShadowCaster\MKToonShadowCaster.cginc" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/BBNY/Documents/Unity/ACubeGameJam/ACube20181026/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
