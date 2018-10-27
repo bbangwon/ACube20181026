@@ -45,7 +45,6 @@ public class Block : NetworkBehaviour{
                         Destroy(gameObject);
                         break;
                     case State.Attack:
-                        Destroy(other.gameObject);
                         Destroy(gameObject);
                         break;
                     default:

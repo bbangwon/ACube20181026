@@ -21,27 +21,16 @@ public class PlayerHealth : NetworkBehaviour
     [ServerCallback]
     void Update()
     {
-        RpcSetGage(gage);
-        if (gage[(int)color.Red] >= 25)
+        if (gage[(int)color.Red] >= 1)
         {
             transform.GetComponent<PlayerMovement>().floor.RedAttack();
             gage[(int)color.Red] = 0;
-        }
-
-    }
-    
-    [ClientRpc]
-    void RpcSetGage(int[] rpcGage)
-    {
-        for (int i = 0; i < 4; i++)
-        {
-            transform.GetChild(1).GetChild(0).GetComponent<GageManager>().sliders[i].value = rpcGage[i];
         }
     }
     
     void SetHPBar()
     {
-        transform.GetChild(1).GetChild(0).GetComponent<GageManager>().SetHPBar(hp);
+        GageManager.Instance.SetHPBar(hp);
     }
 
     [ServerCallback]

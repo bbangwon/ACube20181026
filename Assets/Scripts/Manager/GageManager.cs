@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.Networking;
 
-public class GageManager : NetworkBehaviour{
+public class GageManager : Singleton<GageManager>{
     
     public Slider[] sliders = new Slider[4];
     public Image hpBar;
@@ -18,6 +18,6 @@ public class GageManager : NetworkBehaviour{
     
     public void SetHPBar(float hp)
     {
-        hpBar.fillAmount = hp / 100;
+        hpBar.fillAmount = hp / 10;
     }
 }
